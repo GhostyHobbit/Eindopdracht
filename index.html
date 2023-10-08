@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images/luckywoodslogo.png" alt="lucky-woods-logo" class="logo"> <!--logo-->
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Solar_System" target="_none">Solar System</a>
+            <a href="https://en.wikipedia.org/wiki/Moons_of_Jupiter" target="_none">Moons of Jupiter</a>
+            <a href="https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)" target="_none">Ceres</a>
+            <a href="https://en.wikipedia.org/wiki/Centaur_(small_Solar_System_body)" target="_none">Chiron</a>
+            <a href="https://en.wikipedia.org/wiki/1181_Lilith" class="link-color" target="_none">Lilith</a> <!--different colour-->
+        </div>
+    </nav>
+    <header> 
+        <h1>Our Solar System</h1> <!--include background image-->
+        <p>Our solar system exists out of nine planets, eight for the people who hate Pluto. It's also home to 
+            a total of 205 moons of which Saturn houses the most of them, with 82 moons. The order of the planets from closes to the sun towards
+            the outer rings is: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Neptune, Uranus and Pluto. 
+            The planets outside of the astroid belt are all gass giants, besides Pluto which is actually a glorified chunk of rock about as big as our moon.
+            There are a few more glorified rocks like Ceres, another dwarf planet, Chiron, a rock somewhere between an astroid and a planetoid, and Lilith,
+            a metallic astroid in the astroid belt.
+        </p>
+            <div>
+                <a href="#space-bodies" class="dark">Space Bodies</a>
+                <a href="#form" class="light">Form</a>
+            </div>
+    </header>
+
+    <main>
+        <section class="subheading"> <!--border, img fill, evt hover state on card-->
+            <h2 id="space-bodies">Space Bodies</h2>
+            <div>
+                <article>
+                    <img src="images/mercury.jfif" alt="mercury">
+                    <h3>Mercury</h3>
+                    <span class="stars">&starf; &starf; &starf; &starf; &starf;</span>
+                    <p>Mercury is about as two-faced as I am. It's surface is super hot during day time and icy cold during the night.
+                        A day on Mercury is also twice as long as a year on Mercury. This means that every day you have two birthdays.
+                        Astrologically Mercury is the planet of communication and travels.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_none">Mercury</a>
+                </article>
+                <article>
+                    <img src="images/moon.jpg" alt="moon">
+                    <h3>Moon</h3>
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <p>Our Moon is a big chonky rock that is fully illuminated every 28 days. It's the only space body that has ever
+                        been touched by human feet.
+                        It has not yet been proven if there is actually a man on the moon that creeps at us.
+                        Astrologically the Moon stands for emotions and mental processes.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Moon" target="_none">Moon</a>
+                </article>
+                <article>
+                    <img src="images/pluto.jpg" alt="pluto">
+                    <h3>Pluto</h3>
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <p>Pluto is officially a dwarf planet, no bigger than our Moon. A day on Pluto lasts as long as 6.4 Earth days. One
+                        year on Pluto lasts almost 250 Earth years.
+                        Astrologically Pluto is the planet of transformation and destruction.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Pluto" target="_none">Pluto</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="form">
+            <h2 id="form">Form</h2>
+            <form> <!-- put required down -->
+                <div>
+                    <div class="stack">
+                        <label for="first-name">First Name*</label>
+                        <input name="first-name" id="first-name" type="text" placeholder="First Name" required/>
+                    </div>
+                    <div class="stack">    
+                        <label for="last-name">Last Name*</label>
+                        <input name="last-name" id="last-name" type="text" placeholder="Last Name" required/>
+                    </div>
+                </div>
+                <div class="column"> 
+                    <label for="email">E-mail*</label>
+                    <input name="email" id="email" type="email" placeholder="example@gmail.com" required/>
+                </div>
+                <div>
+                    <div class="stack"> 
+                        <label for="city">City*</label>
+                        <input name="city" id="city" type="text" placeholder="City" required/>
+                    </div>
+                    <div class="stack"> 
+                        <label for="dob">Date of Birth*</label>
+                        <input name="dob" id="dob" type="date" placeholder="dd-mm-yyyy"/>
+                    </div>
+                </div>
+
+                <div class="column">  <!-- flexdirectiom:column -->
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject" class="form-margin">
+                        <option value="" disabled selected>Choose subject planet of your message</option>
+                        <option value="Mercury">Mercury</option>
+                        <option value="Venus">Venus</option>
+                        <option value="Earth">Earth</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Saturn">Saturn</option>
+                        <option value="Uranus">Uranus</option>
+                        <option value="Neptune">Neptune</option>
+                        <option value="Pluto">Pluto</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="form-margin"> </textarea>
+
+                    <span>Sign up for newsletter*</span>
+                    <div class="radio">
+                        <div class="buttons">
+                            <input name="newsletter" id="yes" type="radio" value="yes" required/>
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="buttons">
+                            <input name="newsletter" id="no" type="radio" value="no" required/>
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <input name="required" id="required" type="checkbox" value="done" required>
+                        <label for="required">I agree to the Terms and Conditions*</label>
+                    </div>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="info"> <!--column-->
+            <img src="images/luckywoodslogo.png" alt="lucky-woods-logo" class="logo"> <!--logo-->
+            <h4>Copyright 2023 LuckyWoods</h4>
+            <div> <!--row-->
+                <img src="images/instagram.png" alt="instagram-logo" class="socials"> <!--insta-->
+                <img src="images/facebook.png" alt="facebook-logo" class="socials"> <!--facebook-->
+                <img src="images/twitter.png" alt="twitter-logo" class="socials"> <!--snapchat-->
+            </div>
+        </section>
+        <section>
+            <a href="https://user-images.githubusercontent.com/36815166/39291273-634bb7e6-492a-11e8-87e3-ad0f841bdcbc.jpg" target="_none">Privacy</a>
+            <a href="https://www.jonathanlea.net/wp-content/uploads/does-anyone-read-the-terms-and-conditions_o_1284725.jpg" target="_none">Terms and Conditions</a>
+            <a href="https://blog.logrocket.com/wp-content/uploads/2021/08/cookie-monster-meme.png" target="_none">Cookie Policy</a>
+            <a href="https://i.imgflip.com/306w8k.jpg" target="_none">Contact</a>
+        </section>
+    </footer>
+    
+</body>
+</html>
